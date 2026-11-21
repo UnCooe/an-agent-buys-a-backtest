@@ -1,0 +1,16 @@
+{
+  "exchange": "okx",
+  "pairs": ["BTC/USDT", "ETH/USDT"],
+  "timeframe": "1h",
+  "template_id": "donchian_breakout",
+  "parameter_space": {
+    "window": [20],
+    "volume_window": [20],
+    "stoploss": [-0.12],
+    "minimal_roi": [0.04]
+  },
+  "backtest_timerange": "20240201-20240801",
+  "out_of_sample_timerange": "20240801-20241001",
+  "max_trials": 1,
+  "objective": "profit_drawdown"
+}

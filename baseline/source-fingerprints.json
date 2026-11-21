@@ -1,0 +1,7 @@
+{
+  "originalBacktestEvidenceSha256": {
+    "packet-cycle-01.json": "bf7eec55f51eb56eace4399f51daed44e7b22677b0c5b76b5c7c23bcb8febea1",
+    "decision-cycle-01.json": "b7d15d344b0c773afd9b8bd60dacf39eef8fddab41c106bb7333fc077a7b3124"
+  },
+  "note": "Baseline evidence is a field-limited export; the delivery manifest hashes the public files."
+}

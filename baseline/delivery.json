@@ -1,0 +1,73 @@
+{
+  "orderId": "btc-eth-breakout-x402-001",
+  "transaction": "c0b68a6c934ae5747b920d794cb07a0799779295e11593d3684d94feca1563f4",
+  "status": "delivered",
+  "runId": "loop-20261108-200143-22ebf2bc",
+  "record": {
+    "experiment": {
+      "label": "BTC and ETH range breakout",
+      "market": "OKX spot · BTC / ETH · 1 hour",
+      "runId": "loop-20261108-200143-22ebf2bc"
+    },
+    "workflow": {
+      "question": "Does a 20-hour price breakout with above-average volume survive a separate test period?",
+      "planSource": "demo-research-spec.json",
+      "completedCycles": 1,
+      "development": "-1.22% / 125 trades",
+      "heldOut": "-6.97% / 40 trades",
+      "proofPassed": true,
+      "verdict": "reject_candidate",
+      "decisionSource": "gate"
+    },
+    "evidence": [
+      {
+        "id": "returns",
+        "title": "Backtest results",
+        "rows": [
+          {
+            "label": "Development period",
+            "value": "-1.22% / 125 trades"
+          },
+          {
+            "label": "Held-out period",
+            "value": "-6.97% / 40 trades"
+          },
+          {
+            "label": "Maximum drawdown",
+            "value": "21.48% development / 12.22% held-out"
+          }
+        ],
+        "source": "loop-20261108-200143-22ebf2bc/packet-cycle-01.json",
+        "fingerprint": "2119e774d7933b7496650f5e170375e35303b38a7544f5cfe48ce6c21bb88149"
+      },
+      {
+        "id": "benchmarks",
+        "title": "Held-out benchmarks",
+        "rows": [
+          {
+            "label": "Strategy",
+            "value": "-6.97%"
+          }
+        ],
+        "source": "loop-20261108-200143-22ebf2bc/packet-cycle-01.json",
+        "fingerprint": "2119e774d7933b7496650f5e170375e35303b38a7544f5cfe48ce6c21bb88149"
+      },
+      {
+        "id": "decision",
+        "title": "Decision evidence",
+        "rows": [
+          {
+            "label": "Recorded decision",
+            "value": "Rejected by fixed research rules"
+          },
+          {
+            "label": "Rule checks",
+            "value": "edge.fail.sample_gate; sample_insufficient.max_drawdown; sample_insufficient.oos_profit; sample_insufficient.oos_profit_factor; sample_insufficient.profit_factor"
+          }
+        ],
+        "source": "loop-20261108-200143-22ebf2bc/decision-cycle-01.json",
+        "fingerprint": "88ccee269854444b5d3a7e5e5ccb4be0b4e4f56611a7b7b6d691b097fd03352c"
+      }
+    ]
+  }
+}

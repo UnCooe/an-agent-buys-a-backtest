@@ -1,0 +1,17 @@
+{
+  "orderId": "btc-eth-breakout-x402-001",
+  "network": "ccd:4221332d34e1694168c2a0c0b3fd0f27",
+  "x402Version": 2,
+  "amountMicroCcd": "1000000",
+  "transaction": "0490d4596fd5ced1be358a0dae5021ece5c4c01be31a3cb936a7d4aba731499e",
+  "chainStatus": "finalized",
+  "explorer": "https://ccdexplorer.io/testnet/transaction/0490d4596fd5ced1be358a0dae5021ece5c4c01be31a3cb936a7d4aba731499e",
+  "unpaidHttpStatus": 402,
+  "paidHttpStatus": 202,
+  "replayHttpStatus": 202,
+  "replayReturnedSameTransaction": true,
+  "underBudgetLimitRejected": true,
+  "sellerBalanceIncreaseMicroCcd": "1000000",
+  "buyerBalanceDecreaseMicroCcd": "1000000",
+  "fulfillment": "paid_pending_backtest"
+}

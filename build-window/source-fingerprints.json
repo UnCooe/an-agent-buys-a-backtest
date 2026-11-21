@@ -1,0 +1,11 @@
+{
+  "originalBacktestEvidenceSha256": {
+    "packet-cycle-01.json": "6c03d38989021efab8ec29b23333e4141966ddda9e41fd726368e939610e072f",
+    "decision-cycle-01.json": "af4f32292e9da3e897a5f1b197dbbb6fc061cf207be36ae1f41bc0579cd54bcf"
+  },
+  "historicalInputSha256": {
+    "BTC_USDT-1h.feather": "43ed41339f9122288d7bb24c97f3788621d3a6567fc51922924c934cdbf3884b",
+    "ETH_USDT-1h.feather": "5b2a2d3c44f50d3c05485871cb1f239a5d84800b29264d895c141bc1c804e2a3"
+  },
+  "note": "Build-window evidence is field-limited. The delivery record hashes the published files."
+}

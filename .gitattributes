@@ -1,0 +1,2 @@
+# The delivery manifest hashes the evidence file bytes.
+/baseline/** text eol=lf

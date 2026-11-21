@@ -1,0 +1,57 @@
+{
+  "verdict": "checks_passed",
+  "model": "qwen3:4b",
+  "order": "btc-eth-breakout-x402-001",
+  "run": "loop-20261121-024000-0e57ebd4",
+  "trace": [
+    {
+      "name": "get_order",
+      "handle": null,
+      "source": null
+    },
+    {
+      "name": "read_evidence",
+      "handle": "metrics",
+      "source": "packet-cycle-01.json"
+    },
+    {
+      "name": "read_evidence",
+      "handle": "decision",
+      "source": "decision-cycle-01.json"
+    }
+  ],
+  "transaction": "0490d4596fd5ced1be358a0dae5021ece5c4c01be31a3cb936a7d4aba731499e",
+  "metrics": {
+    "source": "packet-cycle-01.json",
+    "market": "OKX spot · BTC / ETH · 1 hour",
+    "development": {
+      "return_pct": -1.22,
+      "trades": 125,
+      "max_drawdown_pct": 21.48,
+      "profit_factor": 0.9808
+    },
+    "held_out": {
+      "return_pct": -6.97,
+      "trades": 40,
+      "max_drawdown_pct": 12.22,
+      "profit_factor": 0.6577
+    },
+    "gates": {
+      "development_min_trades": 100,
+      "held_out_min_trades": 30,
+      "max_drawdown_pct": 10,
+      "held_out_min_return_pct": 0,
+      "development_min_profit_factor": 1.2,
+      "held_out_min_profit_factor": 1.1
+    },
+    "backtest_integrity": {
+      "lookahead_check_passed": true,
+      "recursive_check_passed": true
+    }
+  },
+  "recordedDecision": {
+    "source": "decision-cycle-01.json",
+    "recorded_decision": "reject_candidate"
+  },
+  "actualAnswer": "Do not advance this strategy. Two critical checks failed: held-out return was -6.97% (below minimum 0%) and development drawdown reached 21.48% (exceeding maximum 10%). Two sample checks passed: development trade count met 125 (above minimum 100) and held-out trade count reached 40 (above minimum 30). Evidence sources: packet-cycle-01.json and decision-cycle-01.json."
+}

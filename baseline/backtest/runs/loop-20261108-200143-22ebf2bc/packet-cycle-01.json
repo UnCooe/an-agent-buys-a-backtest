@@ -1,0 +1,28 @@
+{
+  "metrics": {
+    "train": {
+      "profit_total": -0.012236419122000014,
+      "trade_count": 125.0,
+      "max_drawdown_pct": 21.483279999535917,
+      "profit_factor": 0.9808378379852052
+    },
+    "oos": {
+      "profit_total": -0.069741343094,
+      "trade_count": 40.0,
+      "max_drawdown_pct": 12.217519984846872,
+      "profit_factor": 0.6577289154395914
+    }
+  },
+  "sample_gate": {
+    "thresholds": {
+      "min_trades": 100,
+      "min_oos_trades": 30,
+      "max_drawdown": 0.1,
+      "min_oos_profit": 0.0,
+      "min_profit_factor": 1.2,
+      "min_oos_profit_factor": 1.1
+    },
+    "lookahead_passed": true,
+    "recursive_passed": true
+  }
+}
